@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Circles</title>
+  <script type="text/javascript" src="paper-full.js"></script>
+  <link rel="stylesheet" type="text/css" href="circles - Exercise.css">
+
+  <script type="text/paperscript" canvas="myCanvas">
+  for(var x = 0; x < 1000; x+= 100){
+    for(var y = 0; y < 1000; y+=100){
+     new Path.Circle(new Point(x, y), 10).fillColor = 'purple';
+  }
+      
+}
+
+<!-- for each x we get 100 inerations of y
+<!-- X ¦ Y
+
+<!-- 0   0
+<!-- 0   100
+<!-- 0   200
+<!-- 0   300
+<!-- ...
+<!-- 0   900
+<!-- 100 0
+<!-- 100 100
+<!-- ...
+ 
+
+</script>
+</head>
+<body>
+<canvas id="myCanvas" resize></canvas>
+</body>
+</html>
